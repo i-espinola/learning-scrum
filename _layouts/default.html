@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='pt'>
+
+	{% include head.html %}
+
+	<body>
+    
+    <div class="main">
+
+  		<header id="header">
+        <div class="holder">
+          
+	        {% include logo.html %}
+
+      		<nav id="main-navigation">
+      			<ul>
+      				<li><a href="/xp" title="XP">XP</a></li>
+      				<li><a href="/scrum" title="Scrum">Scrum</a></li>
+      				<li style="display: none;"><a href="/kanban" title="Kanban">Kanban</a></li>
+      			</ul>
+      		</nav>
+
+        </div>
+  		</header>
+
+      {{ content }}
+
+  		{% include contribute.html %}
+
+  		{% include footer.html %}
+
+    </div> <!-- /main -->
+
+	</body>
+</html>
